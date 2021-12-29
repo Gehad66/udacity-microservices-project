@@ -15,7 +15,7 @@ script:
   - docker tag udagram-api-feed "$DOCKER_HUB"/udagram-api-feed:v1
 
   - docker build -t udagram-reverseproxy ./udagram-reverseproxy
-  - docker tag uudagram-reverseproxy "$DOCKER_HUB"/udagram-reverseproxy:v1
+  - docker tag udagram-reverseproxy "$DOCKER_HUB"/udagram-reverseproxy:v1
 
   - docker build -t udagram-api-user ./udagram-api-user
   - docker tag udagram-api-user "$DOCKER_HUB"/udagram-api-user:v1
