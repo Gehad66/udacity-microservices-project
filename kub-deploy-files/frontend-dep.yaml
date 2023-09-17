@@ -16,8 +16,10 @@ spec:
     spec:
       containers:
       - name: udagram-frontend
-        image: gehad66/udagram-frontend:v1
+        image: userName/udagram-frontend:v1
         imagePullPolicy: Always
+        ports:
+        - containerPort: 80
         resources:
           requests:
             memory: "64Mi"
